@@ -1,0 +1,14 @@
+{
+  "name": "rip",
+  "repo": "matchdav/rip",
+  "description": "Tear methods away from their prototypes and bend them to your will",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

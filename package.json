@@ -1,0 +1,17 @@
+{
+  "name": "ripmethod",
+  "version": "0.0.0",
+  "description": "rip a method out of context just because",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "mcd",
+  "license": "mit",
+  "devDependencies": {
+    "should": "^4.0.4"
+  }
+}
