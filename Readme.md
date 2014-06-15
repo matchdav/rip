@@ -1,5 +1,5 @@
 
-# demethodize
+# rip
 
   Force native functions to bind to your contexts and still behave.
 
