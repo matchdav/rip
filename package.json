@@ -1,6 +1,6 @@
 {
   "name": "ripmethod",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "rip a method out of context just because",
   "main": "index.js",
   "directories": {

@@ -37,11 +37,54 @@ var rip = require('ripcontext');
 
 ```javascript
 
-var slice = rip(Array.prototype.slice);
+var splice = rip(Array.prototype.splice),
+    slice = rip(Array.prototype.slice);
 
-slice([1,2,3],1);
+splice([1,2,3],1);
+slice(arguments);
 
 ```
+
+# tests
+
+```
+describe('rip',function(){
+  it('should rip an array method',function(){
+    (split(str,'')).should.eql(str.split(''));
+  });
+  it('should rip a string method',function(){
+    (join(arr,'')).should.eql(arr.join(''));
+  });
+  it('should do inheritance stuff',function(){
+    function Parent(args) {
+      this.name = 'Parent';
+      this.args = args;
+    }
+
+    Parent.prototype.instruct = function() {
+      return 'Do as you are told.';
+    }
+
+    function Child() {
+      apply(Parent,this,slice(arguments));
+      this.name='Child';
+    }
+
+    inherit(Child,Parent);
+
+    Child.prototype.rebel = function() {
+      return 'No way!';
+    }
+    var c = new Child({foo:'bar'});
+    c.name.should.exist;
+    c.args.should.exist;
+    (c.instruct()).should.be.ok;
+    (c.rebel()).should.be.ok;
+  });
+});
+
+```
+
 
 ## License
 
