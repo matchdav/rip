@@ -33,6 +33,8 @@ var rip = require('ripcontext');
 
 ```
 
+# usage
+
 ```javascript
 
 var slice = rip(Array.prototype.slice);
