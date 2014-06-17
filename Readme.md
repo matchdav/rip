@@ -27,9 +27,9 @@ npm
 
 ```
 
-npm install ripcontext
+npm install ripmethod
 
-var rip = require('ripcontext');
+var rip = require('ripmethod');
 
 ```
 
