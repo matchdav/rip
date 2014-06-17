@@ -7,7 +7,7 @@
 
   Install with [component(1)](http://component.io):
 
-    $ component install matchdav/demethodize
+    $ component install matchdav/rip
 
 ## API
 
